@@ -1,0 +1,224 @@
+$theme-color: #814D74;
+$link-color: #fff;
+$bg-color: #252525;
+
+@mixin link-hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #814D74;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	@extend html;
+	background: url("../img/POZADINA.jpg");
+	background-size: cover;
+}
+
+.container {
+	max-width: 970px;
+	margin: 0 auto;
+}
+
+/***HEADER***/
+div.logo {
+	background: url('../img/header.jpg');
+	background-size: 100% auto;
+	margin: 15px 0;
+	height: 110px;
+	background-repeat: no-repeat;
+
+	a.btn {
+		background-color: $theme-color;
+		text-align: center;
+		float: right;
+		margin-top: 2%;
+		margin-right: 2%;
+		color: $link-color;
+		font-size: 20px;
+		font-weight: bold;
+		border: none;
+		border-radius: 0;
+		padding: 3px;
+		&:hover {
+			@include link-hover;
+		}
+	}
+}
+
+.navigation {
+	background-color: $bg-color;
+
+	ul.nav-justified {
+		width: 100%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		li {
+			text-align: center;
+			border-left: 3px solid #fff;
+			font-size: 18px;
+			a {
+				color: $link-color;
+				text-decoration: none;
+				padding: 0;
+				&:hover, &.active {
+					color: $theme-color;
+					background-color: $bg-color;
+				}
+			}
+		}
+	}
+}
+
+/***MAIN***/
+#slideshow {
+	margin: 15px -15px;
+	position: relative;
+	height: 200px;
+}
+
+.slogan {
+	background-color: $bg-color;
+	padding: 15px 0;
+	margin-bottom: 15px;
+	h1 {
+		color: #F3F3F3;
+		font-family: Vijaya;
+		margin: 0;
+		font-size: 50px;
+	}
+}
+
+a.thumbnail {
+	border-radius: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	&:hover {
+		transform: scale(1.07, 1.07);
+		transition: .5s;
+		box-shadow: 0px 0px 8px #000;
+		border: none;
+	}
+}
+
+/*Navigation2*/
+.nav2 {
+	background-color: $bg-color;
+	margin-bottom: 15px;
+	ul.nav-justified {
+		margin: 0;
+		li {
+			font-size: 20px;
+			border: 0;
+			a {
+				padding-bottom: 23px;
+				padding-top: 23px;
+				color: $link-color;
+				&:hover {
+					@include link-hover;
+				}
+			}
+		}
+		li.icon {
+			display: none;
+			font-size: 30px;
+			width: 60px;
+			a {
+				padding: 17px;
+				&:focus {
+					background-color: $theme-color;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.nav2 ul.nav-justified li {
+		display: none;
+	}
+	.nav2 ul.nav-justified li.icon {
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.nav2 ul.nav-justified.responsive {
+		position: relative;
+		li.icon {
+			position: absolute;
+			top: 0;
+		}
+		li {
+			display: inline;
+			a {
+				display: block;
+			}
+		}
+	}
+}
+
+.text {
+	margin-bottom: 15px;
+}
+
+#text {
+	background: url("../img/kontakt.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin-bottom: 15px;
+	padding-bottom: 35%;
+}
+
+/*Form*/
+form {
+	padding: 40% 50px 20px;
+	label {
+		color: $link-color;
+	}
+	.btn-primary, .btn-primary:hover {
+    	background-color: $theme-color;
+    	border: 1px solid $theme-color;
+    	border-radius: 0;
+	}
+}
+
+.line {
+	height: 10px;
+	background-color: #272727;
+}
+
+/***FOOTER***/
+footer .container {
+	background-color: #fff;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	h2 {
+		text-transform: uppercase;
+		color: #6F176E;
+		font-weight: bold;
+		font-size: 23px;
+		margin: 5px 0;
+	}
+
+	p {
+		color: #000;
+		font-weight: bold;
+		margin: 0 0 2px 0;
+	}
+}
+
+#line p{
+	background-color: #272727;
+	color: #aaa;
+	font-weight: 400;
+	font-size: 10px;
+	margin-bottom: 0;
+}

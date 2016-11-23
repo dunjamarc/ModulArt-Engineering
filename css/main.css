@@ -1,0 +1,172 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: url("../img/POZADINA.jpg");
+  background-size: cover; }
+
+.container {
+  max-width: 970px;
+  margin: 0 auto; }
+
+/***HEADER***/
+div.logo {
+  background: url("../img/header.jpg");
+  background-size: 100% auto;
+  margin: 15px 0;
+  height: 110px;
+  background-repeat: no-repeat; }
+  div.logo a.btn {
+    background-color: #814D74;
+    text-align: center;
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    padding: 3px; }
+    div.logo a.btn:hover {
+      text-decoration: none;
+      color: #fff;
+      background-color: #814D74; }
+
+.navigation {
+  background-color: #252525; }
+  .navigation ul.nav-justified {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    .navigation ul.nav-justified li {
+      text-align: center;
+      border-left: 3px solid #fff;
+      font-size: 18px; }
+      .navigation ul.nav-justified li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0; }
+        .navigation ul.nav-justified li a:hover, .navigation ul.nav-justified li a.active {
+          color: #814D74;
+          background-color: #252525; }
+
+/***MAIN***/
+#slideshow {
+  margin: 15px -15px;
+  position: relative;
+  height: 200px; }
+
+.slogan {
+  background-color: #252525;
+  padding: 15px 0;
+  margin-bottom: 15px; }
+  .slogan h1 {
+    color: #F3F3F3;
+    font-family: Vijaya;
+    margin: 0;
+    font-size: 50px; }
+
+a.thumbnail {
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  background: transparent; }
+  a.thumbnail:hover {
+    transform: scale(1.07, 1.07);
+    transition: .5s;
+    box-shadow: 0px 0px 8px #000;
+    border: none; }
+
+/*Navigation2*/
+.nav2 {
+  background-color: #252525;
+  margin-bottom: 15px; }
+  .nav2 ul.nav-justified {
+    margin: 0; }
+    .nav2 ul.nav-justified li {
+      font-size: 20px;
+      border: 0; }
+      .nav2 ul.nav-justified li a {
+        padding-bottom: 23px;
+        padding-top: 23px;
+        color: #fff; }
+        .nav2 ul.nav-justified li a:hover {
+          text-decoration: none;
+          color: #fff;
+          background-color: #814D74; }
+    .nav2 ul.nav-justified li.icon {
+      display: none;
+      font-size: 30px;
+      width: 60px; }
+      .nav2 ul.nav-justified li.icon a {
+        padding: 17px; }
+        .nav2 ul.nav-justified li.icon a:focus {
+          background-color: #814D74; }
+
+@media screen and (max-width: 768px) {
+  .nav2 ul.nav-justified li {
+    display: none; }
+
+  .nav2 ul.nav-justified li.icon {
+    display: inline-block; } }
+@media screen and (max-width: 768px) {
+  .nav2 ul.nav-justified.responsive {
+    position: relative; }
+    .nav2 ul.nav-justified.responsive li.icon {
+      position: absolute;
+      top: 0; }
+    .nav2 ul.nav-justified.responsive li {
+      display: inline; }
+      .nav2 ul.nav-justified.responsive li a {
+        display: block; } }
+.text {
+  margin-bottom: 15px; }
+
+#text {
+  background: url("../img/kontakt.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+  padding-bottom: 35%; }
+
+/*Form*/
+form {
+  padding: 40% 50px 20px; }
+  form label {
+    color: #fff; }
+  form .btn-primary, form .btn-primary:hover {
+    background-color: #814D74;
+    border: 1px solid #814D74;
+    border-radius: 0; }
+
+.line {
+  height: 10px;
+  background-color: #272727; }
+
+/***FOOTER***/
+footer .container {
+  background-color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  footer .container h2 {
+    text-transform: uppercase;
+    color: #6F176E;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 5px 0; }
+  footer .container p {
+    color: #000;
+    font-weight: bold;
+    margin: 0 0 2px 0; }
+
+#line p {
+  background-color: #272727;
+  color: #aaa;
+  font-weight: 400;
+  font-size: 10px;
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=main.css.map */
